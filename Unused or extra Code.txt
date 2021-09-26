@@ -1,0 +1,52 @@
+
+  // Ball bounces up and down
+  /*if (!ball_going_up)
+  {
+    ball.move(ball_direct);
+    if ((ballx > (window.getSize().x - ball.getGlobalBounds().width))
+        || (ballx < 0)
+        || (blue_paddle.getGlobalBounds().intersects(ball.getGlobalBounds()))
+        || red_paddle.getGlobalBounds().intersects(ball.getGlobalBounds()))
+    {
+      ball_going_up = !ball_going_up;
+    }
+  }
+  else
+  {
+    ball.move(-ball_direct);
+    if ((ballx > (window.getSize().x - ball.getGlobalBounds().width))
+        || (ballx < 0)
+        || (blue_paddle.getGlobalBounds().intersects(ball.getGlobalBounds()))
+        || red_paddle.getGlobalBounds().intersects(ball.getGlobalBounds()))
+    {
+      ball_going_up = !ball_going_up;
+    }
+  }*/
+  //ball.move(5.0f* speed * dt, 0.0f);
+****************************************************************************************
+
+  float speed = 50;
+  bool reverse = true;
+  bool ball_going_up = true;
+****************************************************************************************
+
+  int ballx;
+  int bally;
+  int vballx = 5;
+  int vbally = 1;
+  ballx = ball.getPosition().x;
+  bally = ball.getPosition().y;
+*****************************************************************************************
+
+std::cout << "Ball hits red paddle" << std::endl;
+std::cout << "Ball hits blue paddle" << std::endl;
+std::cout << "Ball bottom of screen" << std::endl;
+std::cout << "Ball hits top of screen" << std::endl;
+
+******************************************************************************************
+
+/*Vector::Vector(int vbx, int vby)
+{
+  Vector ball_velocity(bvx / magnitude, bvy / magnitude);
+  std::cout << ball_velocity.vballx << ball_velocity.vbally;
+}*/
